@@ -10,7 +10,7 @@ This is a Homebrew tap (`homebrew-tap`). Taps are third-party formula repositori
 brew tap arturo/tap
 ```
 
-and then install formulas with `brew install arturo/tap/<formula>`.
+and then install formulas with `brew install jarfernandez/tap/<formula>` or the short form `brew install <formula>` (if there's no naming conflict with other taps).
 
 ## Repository Structure
 
