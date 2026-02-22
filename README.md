@@ -16,6 +16,12 @@ Then install any formula from the tap:
 brew install jarfernandez/tap/<formula>
 ```
 
+Or use the short form (if there's no naming conflict with other taps):
+
+```sh
+brew install <formula>
+```
+
 ## Available Formulae
 
 | Formula | Description |
