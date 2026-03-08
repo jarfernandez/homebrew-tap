@@ -5,21 +5,21 @@
 class CheckImage < Formula
   desc "Validate container images against security and operational standards"
   homepage "https://github.com/jarfernandez/check-image"
-  version "0.19.7"
+  version "0.19.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.7/check-image_0.19.7_darwin_amd64.tar.gz"
-      sha256 "830f3ea2c2dad589f7cce1cca996dce0dfadac363846f01f9025f83d4baa53bf"
+      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.8/check-image_0.19.8_darwin_amd64.tar.gz"
+      sha256 "7024e3aacfb382e588df90c102b9d13ecd3bbaec5073bd8a7fd94a04161ba2f1"
 
       define_method(:install) do
         bin.install "check-image"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.7/check-image_0.19.7_darwin_arm64.tar.gz"
-      sha256 "3505f1360263e7f9d16201bb02260de8f076f948fabf7bde112977d9af9a0c6a"
+      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.8/check-image_0.19.8_darwin_arm64.tar.gz"
+      sha256 "bd5b1bed19cef73d1605b6d9ff65f4b22bbcde3bb70276408b281f5dc8c80be9"
 
       define_method(:install) do
         bin.install "check-image"
@@ -29,15 +29,15 @@ class CheckImage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.7/check-image_0.19.7_linux_amd64.tar.gz"
-      sha256 "4531935788f98159e8ffcffaeea1098e5e51643f60b3aae209aef66552a7ef6a"
+      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.8/check-image_0.19.8_linux_amd64.tar.gz"
+      sha256 "86b0e481dd33613e906752cb57ef47e81706ccf4d158e2614d05668e7805cc55"
       define_method(:install) do
         bin.install "check-image"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.7/check-image_0.19.7_linux_arm64.tar.gz"
-      sha256 "8f08edb472e4c164323b4c12345b0e5ee42393deb0f7b68e050ab3a122aca4bf"
+      url "https://github.com/jarfernandez/check-image/releases/download/v0.19.8/check-image_0.19.8_linux_arm64.tar.gz"
+      sha256 "11ceba3e3a98b7204ea9412342bfe6d93aa056ae116faae36a2219a95b24bf87"
       define_method(:install) do
         bin.install "check-image"
       end
